@@ -73,7 +73,6 @@ form .user-details .input-box-password {
 }
 
 form .user-details .input-box-phone-number {
-  /* background-color: rgb(175, 142, 207); */
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
@@ -121,6 +120,7 @@ form .textarea-box-how-about span.details {
   padding-left: 15px;
   border: 1px solid #ccc;
 }
+
 .user-details .input-box-phone-number input {
   height: 35px;
   width: 70%;
@@ -130,6 +130,7 @@ form .textarea-box-how-about span.details {
   padding-left: 15px;
   border: 1px solid #ccc;
 }
+
 .user-details .textarea-box-how-about textarea {
   height: 100px;
   width: 100%;
@@ -205,6 +206,7 @@ form i {
   left: 47%;
   display: none;
 }
+
 .container .tick {
   position: absolute;
   text-align: center;

@@ -3,8 +3,7 @@ const password = document.querySelector("#password");
 
 togglePassword.addEventListener("click", function (e) {
   e.preventDefault();
-  const type =
-    password.getAttribute("type") === "password" ? "text" : "password";
+  const type = password.getAttribute("type") === "password" ? "text" : "password";
   password.setAttribute("type", type);
   this.classList.toggle("bi-eye");
 });
@@ -17,12 +16,6 @@ submitBtn.addEventListener("click", function (e) {
 
   document.getElementById("user-details").style.display = "none";
   document.getElementById("spinner").style.display = "block";
-  setTimeout(
-    () => (document.getElementById("spinner").style.display = "none"),
-    1000
-  );
-  setTimeout(
-    () => (document.getElementById("complete").style.display = "block"),
-    1000
-  );
+  setTimeout(() => (document.getElementById("spinner").style.display = "none"), 1000);
+  setTimeout(() => (document.getElementById("complete").style.display = "block"), 1000);
 });
