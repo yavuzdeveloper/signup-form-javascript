@@ -1,0 +1,230 @@
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #f8f6f1;
+  max-width: 1700px;
+  width: 100%;
+  min-height: 600px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  margin: 70px 0 30px 0;
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.lhs {
+  width: calc(100% / 5);
+  height: calc(100% / 5);
+  margin-top: calc(100% / 10);
+}
+
+.rhs {
+  width: calc(100% / 5);
+  height: calc(100% / 5);
+  margin-top: calc(100% / 10);
+}
+
+.form {
+  width: calc(100% / 2);
+}
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .user-details .input-box-password {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .user-details .input-box-phone-number {
+  /* background-color: rgb(175, 142, 207); */
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .user-details .textarea-box-how-about {
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+}
+
+form .input-box-password span.details {
+  display: block;
+  font-weight: 500;
+}
+
+form .input-box-phone-number span.details {
+  display: block;
+  font-weight: 500;
+}
+
+form .textarea-box-how-about span.details {
+  display: block;
+  font-weight: 500;
+}
+
+.user-details .input-box input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 2px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+
+.user-details .input-box-password input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 2px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+.user-details .input-box-phone-number input {
+  height: 35px;
+  width: 70%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 2px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+.user-details .textarea-box-how-about textarea {
+  height: 100px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 2px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+
+form .button {
+  height: 45px;
+  margin: 30px 0;
+  text-align: center;
+  width: calc(100%);
+}
+
+form .submit {
+  height: 100%;
+  width: 260px;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-image: url("button-bg.png");
+}
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .user-details .input-box-password {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .user-details .input-box-phone-number {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .user-details .textarea-box-how-about {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+form i {
+  margin-left: -25px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.container .spinner {
+  position: absolute;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  top: 40%;
+  left: 47%;
+  display: none;
+}
+.container .tick {
+  position: absolute;
+  text-align: center;
+  width: 70;
+  height: 70px;
+  display: flex;
+  top: 40%;
+  right: 40%;
+  margin-top: 150px;
+}
+
+.container .complete {
+  position: absolute;
+  text-align: center;
+  width: calc(100% / 2.5);
+  height: 50px;
+  display: flex;
+  top: 25%;
+  left: 28%;
+  font-size: 15px;
+  margin-top: 20px;
+  display: none;
+}
